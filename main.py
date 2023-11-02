@@ -11,3 +11,4 @@ for count in range(300, 501):
         print(a)
         file_write = open("sortedNumbers", "a")
         file_write.write(a)
+        file_write.close()
