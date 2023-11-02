@@ -5,7 +5,9 @@ num_list2 = []
 for col in num_list:
     num = int(col)
     num_list2.append(num)
-start = min(num_list2)
-for count in range(start, max(num_list2)):
+for count in range(300, 501):
     if count not in num_list2:
-        print (f"{count} is missing")
+        a = (f"{count} is missing\n")
+        print(a)
+        file_write = open("sortedNumbers", "a")
+        file_write.write(a)
